@@ -85,6 +85,7 @@ print(x_test.shape)
 print(y_train.shape)
 print(y_test.shape)
 # use algoritm to train then predict and finally test it
+# create model then fit data to the model
 knn=KNeighborsClassifier(n_neighbors=28)
 knn.fit(x_train,y_train)
 y_predict=knn.predict(x_train)
